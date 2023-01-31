@@ -1,0 +1,14 @@
+.cookie {
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+  background-color: var(--beta);
+  color: var(--delta);
+  padding: 12rem;
+  position: fixed;
+  width: 100%;
+  bottom: 40rem;
+}
+.cookie a {
+  text-decoration: underline;
+}/*# sourceMappingURL=cookie.css.map */
