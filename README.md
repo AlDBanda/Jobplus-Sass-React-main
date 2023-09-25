@@ -1,10 +1,10 @@
 # React + Sass
 
-This is a react project with SASS baked into it, use it as your basis for whenever you want to create your own React + SASS combo.
+This is a react project with SASS baked into it!
 
 ### Explore the `package.json` file
 
-Have a look at all the dependencies we have used in our package.json file.
+Have a look at all the dependencies I have used in our package.json file.
 
 #### @babel/preset-env
 This is a Babel preset that determines the JavaScript features to include based on the environment being targeted. It is used to transpile modern JavaScript code into code that can run in older environments, such as older browsers or Node.js versions.
@@ -43,17 +43,17 @@ This is a development server that provides live reloading for Webpack projects. 
 
 Mixins need to be imported into the React component where they are used. If the mixin is not imported, React will not be able to pick it up.
 
-You will notice we have manually imported all the loaders that make this possible: css-loader, sass-loader, sass-resources-loader, style-loader.
+You will notice I have manually imported all the loaders that make this possible: css-loader, sass-loader, sass-resources-loader, style-loader.
 
-e.g we have defined breakpoints, without above sass-resources-loader, we would have to manually remember to import the breakpoint everwhere we need to call it.
+e.g I have defined breakpoints, without above sass-resources-loader, I would have to manually remember to import the breakpoint everwhere I need to call it.
 
 ### Webpack config
 
-We install `webpack` so we can use it to specify our loaders and the order they run.
+I also install `webpack` so I can use it to specify  loaders and the order they run.
 
-We then use webpack config to load in all the loaders in the correct sequence, which is in a reverse order.
+I then use webpack config to load in all the loaders in the correct sequence, which is in a reverse order.
 
-Sass Resource Loader will firstly get all our breakpoints, and include them into each sass file, then the sass-loader will take all that sass and spit out a css file, finally the style-loader will load that style into our html page.
+Sass Resource Loader will firstly get all  breakpoints, and include them into each sass file, then the sass-loader will take all that sass and spit out a css file, finally the style-loader will load that style into the html page.
 
 ```
 # webpack.config.js file
